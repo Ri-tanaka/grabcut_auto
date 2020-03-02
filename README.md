@@ -1,2 +1,2 @@
 # grabcut_auto
-test
+日本語文字化けしないか
