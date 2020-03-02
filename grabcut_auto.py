@@ -2,9 +2,11 @@
 #!/usr/bin/env python
 '''
 ===============================================================================
-Grubcutを使ったイラストの顔パーツを自動で分割します。
+Grubcutを使ってイラストの顔パーツを自動で分割します。
 USAGE:
-    python grabcut_auto.py <filename>
+    python grabcut_auto.py <画像ファイル名> <パーツ>
+    パーツには"right_eye", "left_eye", "mouth", "face", "bangs", "nose"
+    のうちのどれかを入力してください。
 README FIRST:
     1.入力ウィンドウと出力ウィンドウが開きます。
     2.入力ウィンドウ上で、前景抽出をしたい領域をマウスで四角に囲みます。
