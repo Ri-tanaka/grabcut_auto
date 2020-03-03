@@ -3,6 +3,7 @@
 ## 概要
 Live2D制作の前準備である、キャラクター画像の"顔パーツをそれぞれのレイヤーに分割する"という作業を効率化するためのツールを作成しました。
 
+## 目的
 Live2Dを制作するためには、キャラクターイラストの目、口、髪の毛、などのパーツを予め別レイヤーに分割して用意しておかなくてはいけません。しかし、レイヤー分けしていない既存の画像をLive2Dに取り込んで動かしたい場合には、手作業でパーツごとにレイヤー分けをする必要があります。その作業はとても時間がかかり、面倒であるため、このツールにより、対話的前景領域抽出のgrabcutのアルゴリズムとアニメ画像の顔認識のプログラムをベースとして、目、鼻、口などの顔パーツを認識し、自動で切り取りを行うことを目的としました。
 
 ## 機能一覧
@@ -48,7 +49,7 @@ key 'q' - 終了
 ## 必要条件  
 - opencv-python  
 - torch-python
-- [checkpoint_landmark_191116.pth.tar](https://drive.google.com/file/d/1NckKw7elDjQTllRxttO87WY7cnQwdMqz/view)
+- [checkpoint_landmark_191116.pth.tar](https://drive.google.com/file/d/1NckKw7elDjQTllRxttO87WY7cnQwdMqz/view)(顔検出の為のカスケードファイル)
 
 ## 制作期間、担当箇所など
 研究室仮配属の制作課題にて3人チームで作成しました。
