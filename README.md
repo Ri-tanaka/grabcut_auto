@@ -41,14 +41,24 @@ Key 'r' - リセット
 Key 's' - 出力を保存  
 key 'q' - 終了
 
-# 使用言語、環境
+## 使用言語、環境
 - python 3.7.6  
 - Visual Studio 2017  
 - Windows 10    
 
-# 必要条件  
+## 必要条件  
 - opencv-python  
 - torch-python
 - [checkpoint_landmark_191116.pth.tar](https://drive.google.com/file/d/1NckKw7elDjQTllRxttO87WY7cnQwdMqz/view)
 
+## 制作期間、担当箇所など
+研究室仮配属の制作課題にて3人チームで作成しました。
+- 制作期間
+    - 約2か月
+- 主な担当箇所
+    - 鼻、前髪、顔の座標設定、切り取り
+    - key'5'により鼻の前景領域を自動で抽出し、クロップして保存する機能
+    - 主な保存機能（透過保存、出力画像の保存、マスクの保存など）
+    - 使用したイラストの制作
+    - Live2Dの制作
 
