@@ -16,12 +16,13 @@ Live2Dを制作するためには、キャラクターイラストの目、口�
 〇landmark.py - [アニメ顔用のランドマーク検出プログラム](https://github.com/kanosawa/anime_face_landmark_detection) をベースとして、検出した顔ランドマークの座標をもとに、それぞれのパーツごとの座標設定を追加しました。
 
 ## デモリールと使い方
-
+#### デモリール
 ![grabcutauto_demo](https://user-images.githubusercontent.com/61644695/75748092-0200b380-5d62-11ea-9dcf-58dcea4ffeb9.gif)
-#### パーツごとにクロップして保存されたファイル
+#### 出力結果：パーツごとにクロップして保存されたファイル
 ![保存されたファイル](file_result.png)
 
-USAGE:　コマンドラインにて以下を入力します。抽出する顔パーツは"right_eye", "left_eye", "nose", "mouth", "face", "bangs"のうちのどれかを選んで入力します。    
+#### 使い方
+コマンドラインにて以下を入力します。抽出する顔パーツは"right_eye", "left_eye", "nose", "mouth", "face", "bangs"のうちのどれかを選んで入力します。    
     `python grabcut_auto.py <画像ファイル名> <抽出する顔パーツ>`   
     
     1.入力ウィンドウと出力ウィンドウが開きます。  
