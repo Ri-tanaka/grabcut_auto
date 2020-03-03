@@ -40,3 +40,15 @@ Key 'n' - 前景抽出をアップデートする
 Key 'r' - リセット  
 Key 's' - 出力を保存  
 key 'q' - 終了
+
+# 使用言語、環境
+- python 3.7.6  
+- Visual Studio 2017  
+- Windows 10    
+
+# 必要条件  
+- opencv-python  
+- torch-python
+- [checkpoint_landmark_191116.pth.tar](https://drive.google.com/file/d/1NckKw7elDjQTllRxttO87WY7cnQwdMqz/view)
+
+
