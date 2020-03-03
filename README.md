@@ -7,8 +7,8 @@ Live2D制作の前準備である、キャラクター画像の"顔パーツを�
 Live2Dを制作するためには、キャラクターイラストの目、口、髪の毛、などのパーツを予め別レイヤーに分割して用意しておかなくてはいけません。しかし、レイヤー分けしていない既存の画像をLive2Dに取り込んで動かしたい場合には、手作業でパーツごとにレイヤー分けをする必要があります。その作業はとても時間がかかり、面倒であるため、このツールにより、対話的前景領域抽出のgrabcutのアルゴリズムとアニメ画像の顔認識のプログラムをベースとして、目、鼻、口などの顔パーツを認識し、自動で切り取りを行うことを目的としました。
 
 ## 機能一覧
-- grabcut_auto - [grabcutのプログラム](https://github.com/opencv/opencv/blob/master/samples/python/grabcut.py) をベースに作成したプログラム[grabcut_manual](https://github.com/Ri-tanaka/grabcut_manual)に顔認識の機能を追加しました。
-    - マウスで描写することによって、前景領域と背景領域を選択する機能　　
+- grabcut_auto - [grabcutのプログラム](https://github.com/opencv/opencv/blob/master/samples/python/grabcut.py) をベースに作成したプログラム[grabcut_manual.py](https://github.com/Ri-tanaka/grabcut_manual)に顔認識の機能を追加しました。
+    - マウスで描写することによって、前景領域と背景領域を選択する機能  　
     (追加した箇所)
     - 顔パーツ(右目、左目、鼻、口、前髪、顔)を顔認識によって認識し、前景領域抽出を行う機能  
     - 出力画像をクロップして、それぞれのパーツごとの名前を付けて透過で保存する機能  
