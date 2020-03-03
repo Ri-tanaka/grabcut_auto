@@ -8,7 +8,8 @@ Live2Dを制作するためには、キャラクターイラストの目、口�
 
 ## 機能一覧
 - grabcut_auto - [grabcutのプログラム](https://github.com/opencv/opencv/blob/master/samples/python/grabcut.py) をベースに作成したプログラム[grabcut_manual.py](https://github.com/Ri-tanaka/grabcut_manual)に顔認識の機能を追加しました。
-    - マウスで描写することによって、前景領域と背景領域を選択する機能  　
+    - マウスで描写することによって、前景領域と背景領域を選択する機能
+    (追加した機能)
     - 顔パーツ(右目、左目、鼻、口、前髪、顔)を顔認識によって認識し、前景領域抽出を行う機能  
     - 出力画像をクロップして、それぞれのパーツごとの名前を付けて透過で保存する機能  
     - 目の切り取りを選択後、白目部分も切り取り可能に  
