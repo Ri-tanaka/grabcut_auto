@@ -9,19 +9,20 @@ USAGE:
     のうちのどれかを入力してください。
 README FIRST:
     1.入力ウィンドウと出力ウィンドウが開きます。
-    2.入力ウィンドウ上で、前景抽出をしたい領域をマウスで四角に囲みます。
+    2.入力ウィンドウ上で、抽出する顔パーツが矩形で囲まれます。
     3.'n'を数回押すことによって前景抽出を行います。
-    4.以下のキーを入力し、'n'を押すことでより明確に前景抽出を行うことができます。
+    4.以下のキーを入力し、前景領域と背景領域をマウスによる描写で選択し、'n'を押すことで抽出したい部分を調整することができます。
 
-Key '0' - 明確な背景領域を選択
-Key '1' - 明確な前景領域を選択
-Key '2' - 曖昧な背景領域を選択
-Key '3' - 曖昧な前景領域を選択
+Key '0' - 明確な背景領域をマウスで描写
+Key '1' - 明確な前景領域をマウスで描写
+Key '2' - 曖昧な背景領域をマウスで描写
+Key '3' - 曖昧な前景領域をマウスで描写
 key '4' - 白目を前景抽出する
 key '5' - "nose"を選択して鼻を前景抽出する
 Key 'n' - 前景抽出をアップデートする
 Key 'r' - リセット
 Key 's' - 出力を保存
+key 'q' - 終了
 ===============================================================================
 '''
 
@@ -127,7 +128,7 @@ class App():
         else:
             print("No input image given, so loading default image, lena.jpg \n")
             print("Correct Usage: python grabcut.py <filename> \n")
-            filename = 'syasyaki.png'
+            filename = 'test.png'
 
         #　画像読み込み
         self.img = cv.imread(cv.samples.findFile(filename))
@@ -154,9 +155,7 @@ class App():
         SkinLow = np.array([0,30,60])
         SkinHigh = np.array([40,150,255])
         hsv_mask = cv.inRange(hsv, SkinLow, SkinHigh)
-        #img_color = cv.bitwise_and(self.img,self.img, hsv_mask)
- 
-       
+        
         print(" Instructions: \n")
         print(" Draw a rectangle around the object using right mouse button \n")
 
