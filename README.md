@@ -20,7 +20,7 @@ Live2Dを制作するためには、キャラクターイラストの目、口�
 #### デモリール
 ![grabcutauto_demo](https://user-images.githubusercontent.com/61644695/75748092-0200b380-5d62-11ea-9dcf-58dcea4ffeb9.gif)
 #### 出力結果：パーツごとにクロップして保存されたファイル
-<img src="cropped_file1.png" width="450" height=280px > <img src="cropped_file2.png" width="400" height=300px > 
+<img src="cropped_file1.png" width="450" height=2px > <img src="cropped_file2.png" width="400" height=300px > 
 #### 使い方
 コマンドラインにて以下を入力します。抽出する顔パーツは"right_eye", "left_eye", "nose", "mouth", "face", "bangs"のうちのどれかを選んで入力します。    
     `python grabcut_auto.py <画像ファイル名> <抽出する顔パーツ>`   
@@ -61,4 +61,3 @@ key 'q' - 終了
     - 主な保存機能（透過保存、出力画像の保存、マスクの保存など）
     - 使用したイラストの制作
     - Live2Dの制作
-
