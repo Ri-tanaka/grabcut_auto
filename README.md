@@ -8,7 +8,7 @@ Live2D制作の前準備である、キャラクター画像の"顔パーツを�
 眉毛や二重線など、このツールで細かく切り取りができなかった部分は、Clip Studioで手動で切り取りを行いました。
 
 作成したツールを用いることによって、数日単位で作業効率が向上しました。
-<img src=".png" width="450" height=250px >
+<img src=".png" width="450" height=450px >
 ![Live2D_demo](https://user-images.githubusercontent.com/61644695/76676880-38182000-660b-11ea-97b1-ea43bdc1c527.gif)
 
 
