@@ -150,11 +150,6 @@ class App():
         cv.namedWindow('input', cv.WINDOW_NORMAL)
         cv.setMouseCallback('input', self.onmouse)
         cv.moveWindow('input', self.img.shape[1]+10,90)
-
-        hsv = cv.cvtColor(self.img, cv.COLOR_BGR2HSV)
-        SkinLow = np.array([0,30,60])
-        SkinHigh = np.array([40,150,255])
-        hsv_mask = cv.inRange(hsv, SkinLow, SkinHigh)
         
         print(" Instructions: \n")
         print(" Draw a rectangle around the object using right mouse button \n")
@@ -176,19 +171,6 @@ class App():
                 self.value = self.DRAW_BG
             elif k == ord('1'): # FG drawing
                 print(" mark foreground regions with left mouse button \n")
-             
-                '''
-                # 顔から白部分を認識
-                for i in rect: 
-                    dst = cv.inRange(self.img,(250,250,250),(255,255,255))
-                
-                # 白部分を前景指定
-                for ex in range(dst.shape[0]):
-                    for ey in range(dst.shape[1]):
-                        if dst[ex,ey] == 255:
-                            cv.circle(self.img, (ey,ex), self.thickness, self.value['color'], -1)
-                            cv.circle(self.mask, (ey,ex), self.thickness, self.value['val'], -1)
-                '''
                 self.value = self.DRAW_FG
             elif k == ord('2'): # PR_BG drawing
                 self.value = self.DRAW_PR_BG
