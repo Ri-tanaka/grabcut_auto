@@ -34,7 +34,7 @@ Live2Dを制作するためには、キャラクターイラストの目、口�
 ![grabucut_manual](https://user-images.githubusercontent.com/61644695/75776911-460eab00-5d98-11ea-8d33-e33a562f8382.gif)
 
 #### 出力結果：パーツごとにクロップして保存されたファイル
-<img src="cropped_file1.png" width="480" height=250px > <img src="cropped_file.png" width="400" height=350px >
+<img src="cropped_file1.png" width="480" height=230px > <img src="cropped_file.png" width="400" height=350px >
 
 #### 使い方
 コマンドラインにて以下を入力します。抽出する顔パーツは"right_eye", "left_eye", "nose", "mouth", "face", "bangs"のうちのどれかを選んで入力します。顔パーツを指定しないで実行した場合、右ドラッグで切り取りする範囲を選択します。保存するときは
