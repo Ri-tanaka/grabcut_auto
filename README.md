@@ -35,7 +35,7 @@ Live2Dを制作するためには、キャラクターイラストの目、口�
 
 #### 出力結果：パーツごとにクロップして保存されたファイル
 <img src="cropped_file1.png" width="450" height=250px > <img src="cropped_file2.png" width="400" height=300px >
-<img src="cropped_file.png" width="400" height=300px >
+<img src="cropped_file.png" width="400" height=350px >
 
 #### 使い方
 コマンドラインにて以下を入力します。抽出する顔パーツは"right_eye", "left_eye", "nose", "mouth", "face", "bangs"のうちのどれかを選んで入力します。顔パーツを指定しないで実行した場合、右ドラッグで切り取りする範囲を選択します。保存するときは
