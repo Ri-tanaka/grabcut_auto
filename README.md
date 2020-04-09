@@ -8,7 +8,7 @@ Live2D制作の前準備である、キャラクター画像の"顔パーツを�
 眉毛や二重線など、このツールで細かく切り取りができなかった部分は、Clip Studio Paintで手動で切り取りを行いました。  
 作成したツールを用いてLive2D制作をしたところ、数日単位で作業効率を向上させることに成功しました。
 
-<img src="test.png" alt="alt　テキスト" title="使用するイラスト" width="330" height=350px > <img src="https://user-images.githubusercontent.com/61644695/76677488-36058f80-6612-11ea-93e6-61bedb571f99.gif" title="Live2Dで動かした様子" width="330" height=350px > ![cropped_file](https://user-images.githubusercontent.com/61644695/78854790-2c2e4b00-7a5d-11ea-9f4d-5004c6ef8a16.png)
+<img src="test.png" alt="alt　テキスト" title="使用するイラスト" width="330" height=350px > <img src="https://user-images.githubusercontent.com/61644695/76677488-36058f80-6612-11ea-93e6-61bedb571f99.gif" title="Live2Dで動かした様子" width="330" height=350px > 
 
 ## 目的
 Live2Dを制作するためには、キャラクターイラストの目、口、髪の毛、などのパーツを予め別々のレイヤーに分割したファイルを用意しておかなくてはいけません。しかし、レイヤー分けしていない既存の画像をLive2Dに取り込んで動かしたい場合には、手作業でパーツごとにレイヤー分けをする必要があります。その作業はとても手間が掛かるため、対話的前景領域抽出のgrabcutのアルゴリズムとアニメ画像の顔認識のプログラムをベースとして、目、鼻、口などの顔パーツを認識し、自動で切り取りを行うことを目的としました。
