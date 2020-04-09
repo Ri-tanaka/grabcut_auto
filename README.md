@@ -26,7 +26,7 @@ Live2Dを制作するためには、キャラクターイラストの目、口�
     - 顔パーツ(右目、左目、鼻、口、顔、前髪、顔)それぞれの座標設定
     - 四角で囲む座標4点を設定
 
-## デモリールと使い方
+## デモリール
 #### デモリール1：grabcut_auto.pyを実行し、右目、左目、鼻、口、前髪の前景領域抽出を行っている様子
 ![grabcutauto_demo](https://user-images.githubusercontent.com/61644695/75748092-0200b380-5d62-11ea-9dcf-58dcea4ffeb9.gif)
 
@@ -37,7 +37,7 @@ Live2Dを制作するためには、キャラクターイラストの目、口�
 #### 出力結果：パーツごとにクロップして保存されたファイル
 <img src="cropped_file1.png" width="480" height=230px > <img src="cropped_file.png" width="400" height=350px >
 
-#### 使い方
+## 使い方
 - コマンドラインにて以下を入力します。  
    `python grabcut_auto.py <画像ファイル名> <切り取る顔パーツ>`   
    
