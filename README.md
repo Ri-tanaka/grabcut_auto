@@ -41,8 +41,10 @@ Live2Dを制作するためには、キャラクターイラストの目、口�
 - コマンドラインにて以下を入力します。  
    `python grabcut_auto.py <画像ファイル名> <切り取る顔パーツ>`   
    
-- 切り取る顔パーツは"right_eye", "left_eye", "nose", "mouth", "face", "bangs"のうちのどれかを選んで入力します。例）python grabcut_auto.py test.png right_eye　　
-- 顔パーツを指定しないで実行した場合、右マウスのドラッグで切り取りする範囲を選択します。例）python grabcut_auto.py test.png
+- 切り取る顔パーツは"right_eye", "left_eye", "nose", "mouth", "face", "bangs"のうちのどれかを選んで入力します。  
+    `例）python grabcut_auto.py test.png right_eye`　
+- 顔パーツを指定しないで実行した場合、右マウスのドラッグで切り取りする範囲を選択します。  
+    `例）python grabcut_auto.py test.png`
 ```
     1.入力ウィンドウと出力ウィンドウが開きます。  
     2.入力ウィンドウ上で、
